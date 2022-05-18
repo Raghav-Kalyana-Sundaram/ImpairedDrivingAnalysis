@@ -6,7 +6,7 @@ import numpy as np
 st.title("Impaired Driving Analysis") 
 st.subheader("Graphs and Analysis") 
 
-graph1=st.image('G:\My Drive\ImpairedDrivingAnalysis\Frontend\Images\Image1.jpg')
+st.image('G:\My Drive\ImpairedDrivingAnalysis\Frontend\Images\Image1.jpg')
 
 with st.sidebar:
     st.radio ('Select one' , [1,2]) 
