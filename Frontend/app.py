@@ -19,7 +19,12 @@ for i in range(1, 101):
 
 progress_bar.empty()
 
+with st.sidebar:
+    st.radio ('Select one' , [1,2]) 
+
 # Streamlit widgets automatically run the script from top to bottom. Since
 # this button is not connected to any other logic, it just causes a plain
 # rerun.
 st.button("Re-run")
+
+st.file_uploader('Upload a photo you want to test') 
