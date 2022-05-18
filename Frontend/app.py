@@ -28,3 +28,8 @@ with st.sidebar:
 st.button("Re-run")
 
 st.file_uploader('Upload a photo you want to test') 
+
+with st.form(key='form'):
+    username = st.text_input('Username')
+    password = st.text_input('Password')
+    st.form_submit_button('Login') 
