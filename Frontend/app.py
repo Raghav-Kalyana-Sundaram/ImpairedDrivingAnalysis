@@ -15,7 +15,7 @@ st.subheader("Graphs and Analysis")
 # rerun.
 st.button("Re-run")
 
-st.download_button('Download the model',Graph1.jpg) 
+st.download_button('Download the model','    ', file_name='Impaired Driving Machine Learning Model') 
 
 with st.form(key='form'):
     username = st.text_input('Username')
