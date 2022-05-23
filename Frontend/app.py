@@ -13,7 +13,6 @@ st.title("Impaired Driving Analysis")
 # Streamlit widgets automatically run the script from top to bottom. Since
 # this button is not connected to any other logic, it just causes a plain
 # rerun.
-st.button("Re-run")
 
 st.download_button('Download the model','    ', file_name='Impaired Driving Machine Learning Model.h5') 
 
@@ -21,8 +20,8 @@ df=pd.DataFrame(np.random.randn(800,2)/[50,50]+[46.34, -108.70], columns=['latit
 st.map(df)
 
 with st.form(key='form'):
-    username = st.text_input('Username')
-    password = st.text_input('Password')
-    st.form_submit_button('Login') 
+    username = st.text_input('ID')
+    password = st.text_input('ZIP Code')
+    st.form_submit_button('Submit:') 
     
   
