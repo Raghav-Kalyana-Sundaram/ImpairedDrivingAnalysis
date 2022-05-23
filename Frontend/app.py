@@ -15,9 +15,15 @@ st.subheader("Graphs and Analysis")
 # rerun.
 st.button("Re-run")
 
-st.download_button('Download the model','    ', file_name='Impaired Driving Machine Learning Model') 
+st.download_button('Download the model','    ', file_name='Impaired Driving Machine Learning Model.h5') 
+
+st.map()
+df=pd.DataFrame(np.random.randn(800,2)/[50,50]+[46.34, -108.70], columns=['latitude', 'longitude']) 
+st.map(df)
 
 with st.form(key='form'):
     username = st.text_input('Username')
     password = st.text_input('Password')
     st.form_submit_button('Login') 
+    
+  
