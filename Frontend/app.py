@@ -1,11 +1,11 @@
 #https://share.streamlit.io/daniellewisdl/streamlit-cheat-sheet/app.py
 import streamlit as st
 import time
+import pandas as pd
 import numpy as np
 from PIL import Image
 
 st.title("Impaired Driving Analysis") 
-st.subheader("Graphs and Analysis") 
 
 #image1=Image.open('Graph1.jpg')
 #st.image(image1,caption='Our first graph showing how the accuracy of our model increased as we tested it more times')
