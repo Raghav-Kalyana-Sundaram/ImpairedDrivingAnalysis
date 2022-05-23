@@ -9,15 +9,13 @@ st.subheader("Graphs and Analysis")
 
 #image1=Image.open('Graph1.jpg')
 #st.image(image1,caption='Our first graph showing how the accuracy of our model increased as we tested it more times')
-with st.sidebar:
-    st.radio ('Select one' , [1,2]) 
 
 # Streamlit widgets automatically run the script from top to bottom. Since
 # this button is not connected to any other logic, it just causes a plain
 # rerun.
 st.button("Re-run")
 
-st.file_uploader('Upload a photo you want to test') 
+st.download_button('Download the model','Graph1.jpg') 
 
 with st.form(key='form'):
     username = st.text_input('Username')
